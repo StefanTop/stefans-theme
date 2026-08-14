@@ -341,6 +341,16 @@
         "show_cart_note": {
           "label": "Cart note"
         },
+        "free_shipping_bar": {
+          "header": "Free shipping bar",
+          "show": {
+            "label": "Show free shipping progress bar"
+          },
+          "threshold": {
+            "label": "Free shipping threshold",
+            "info": "Amount a customer needs to spend to qualify for free shipping"
+          }
+        },
         "cart_drawer": {
           "header": "Cart drawer",
           "collection": {
