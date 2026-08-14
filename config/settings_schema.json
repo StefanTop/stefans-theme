@@ -1436,6 +1436,23 @@
       },
       {
         "type": "header",
+        "content": "t:settings_schema.cart.settings.free_shipping_bar.header"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_free_shipping_bar",
+        "label": "t:settings_schema.cart.settings.free_shipping_bar.show.label",
+        "default": true
+      },
+      {
+        "type": "number",
+        "id": "free_shipping_threshold",
+        "label": "t:settings_schema.cart.settings.free_shipping_bar.threshold.label",
+        "info": "t:settings_schema.cart.settings.free_shipping_bar.threshold.info",
+        "default": 50
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.cart.settings.cart_drawer.header"
       },
       {

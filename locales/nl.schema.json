@@ -255,6 +255,16 @@
         "show_cart_note": {
           "label": "Notitie voor winkelwagen"
         },
+        "free_shipping_bar": {
+          "header": "Balk gratis verzending",
+          "show": {
+            "label": "Toon voortgangsbalk gratis verzending"
+          },
+          "threshold": {
+            "label": "Drempelbedrag gratis verzending",
+            "info": "Bedrag dat een klant moet besteden om in aanmerking te komen voor gratis verzending"
+          }
+        },
         "cart_drawer": {
           "header": "Winkelwagenoptie",
           "collection": {
