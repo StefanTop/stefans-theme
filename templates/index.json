@@ -112,7 +112,7 @@
       "settings": {
         "title": "Bestsellers",
         "heading_size": "h1",
-        "description": "De meest verkochte tools, door klanten beoordeeld.",
+        "description": "<p>De meest verkochte tools, door klanten beoordeeld.</p>",
         "show_description": true,
         "description_style": "body",
         "collection": "all",
