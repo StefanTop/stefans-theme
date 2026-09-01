@@ -54,7 +54,7 @@
         "color_scheme": "scheme-1",
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "left",
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "shop_by_category": {
