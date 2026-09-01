@@ -14,31 +14,50 @@
       "blocks": {
         "column-1": {
           "type": "column",
-          "settings": { "title": "Gratis verzending vanaf €50", "text": "" }
+          "settings": {
+            "title": "Gratis verzending vanaf €50",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         },
         "column-2": {
           "type": "column",
-          "settings": { "title": "30 dagen retour", "text": "" }
+          "settings": {
+            "title": "30 dagen retour",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         },
         "column-3": {
           "type": "column",
-          "settings": { "title": "Persoonlijke klantenservice", "text": "" }
+          "settings": {
+            "title": "Persoonlijke klantenservice",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
-      "block_order": ["column-1", "column-2", "column-3"],
+      "block_order": [
+        "column-1",
+        "column-2",
+        "column-3"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "square",
-        "column_alignment": "center",
-        "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": true,
         "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
         "color_scheme": "scheme-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 20,
         "padding_bottom": 20
       }
@@ -72,37 +91,60 @@
           }
         }
       },
-      "block_order": ["heading", "text", "button"],
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
         "image_behavior": "none",
+        "desktop_content_position": "middle-left",
         "desktop_content_alignment": "left",
+        "show_text_box": false,
         "color_scheme": "scheme-1",
-        "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
+        "mobile_content_alignment": "left",
         "show_text_below": true
       }
     },
     "shop_by_category": {
       "type": "collection-list",
       "blocks": {
-        "collection-1": { "type": "featured_collection", "settings": { "collection": "" } },
-        "collection-2": { "type": "featured_collection", "settings": { "collection": "" } },
-        "collection-3": { "type": "featured_collection", "settings": { "collection": "" } }
+        "collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
       },
-      "block_order": ["collection-1", "collection-2", "collection-3"],
+      "block_order": [
+        "collection-1",
+        "collection-2",
+        "collection-3"
+      ],
       "settings": {
         "title": "Shop op categorie",
         "heading_size": "h1",
         "image_ratio": "portrait",
         "columns_desktop": 3,
         "color_scheme": "scheme-1",
-        "swipe_on_mobile": true,
-        "columns_mobile": "1",
         "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -110,20 +152,19 @@
     "bestsellers": {
       "type": "featured-collection",
       "settings": {
+        "collection": "all",
+        "products_to_show": 3,
         "title": "Bestsellers",
         "heading_size": "h1",
         "description": "<p>De meest verkochte tools, door klanten beoordeeld.</p>",
         "show_description": true,
         "description_style": "body",
-        "collection": "all",
-        "products_to_show": 3,
         "columns_desktop": 3,
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "swipe_on_mobile": true,
+        "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -131,6 +172,7 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -165,7 +207,11 @@
           }
         }
       },
-      "block_order": ["caption", "heading", "button"],
+      "block_order": [
+        "caption",
+        "heading",
+        "button"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -179,8 +225,8 @@
       "type": "before-after",
       "settings": {
         "heading": "Voor & na",
-        "heading_size": "h1",
         "subheading": "Het verschil zie je. Je merkt het wel.",
+        "heading_size": "h1",
         "label_before": "Voor",
         "label_after": "Na",
         "color_scheme": "scheme-1",
@@ -193,35 +239,60 @@
       "blocks": {
         "column-1": {
           "type": "column",
-          "settings": { "title": "30 dagen", "text": "<p>Retourrecht</p>" }
+          "settings": {
+            "title": "30 dagen",
+            "text": "<p>Retourrecht</p>",
+            "link_label": "",
+            "link": ""
+          }
         },
         "column-2": {
           "type": "column",
-          "settings": { "title": "24u", "text": "<p>Verzonden vanuit NL</p>" }
+          "settings": {
+            "title": "24u",
+            "text": "<p>Verzonden vanuit NL</p>",
+            "link_label": "",
+            "link": ""
+          }
         },
         "column-3": {
           "type": "column",
-          "settings": { "title": "SSL", "text": "<p>Veilig betalen</p>" }
+          "settings": {
+            "title": "SSL",
+            "text": "<p>Veilig betalen</p>",
+            "link_label": "",
+            "link": ""
+          }
         },
         "column-4": {
           "type": "column",
-          "settings": { "title": "4,8/5", "text": "<p>Klantbeoordeling</p>" }
+          "settings": {
+            "title": "4,8/5",
+            "text": "<p>Klantbeoordeling</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
-      "block_order": ["column-1", "column-2", "column-3", "column-4"],
+      "block_order": [
+        "column-1",
+        "column-2",
+        "column-3",
+        "column-4"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "square",
-        "column_alignment": "center",
-        "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": true,
         "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -247,44 +318,90 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Yerkoo begon in Apeldoorn met één idee: huishoudelijke klusjes hoeven niet ingewikkeld te zijn. Elk product dat we maken lost één concreet probleem op — niet meer, niet minder.</p>"
+            "text": "<p>Yerkoo begon in Apeldoorn met één idee: huishoudelijke klusjes hoeven niet ingewikkeld te zijn. Elk product dat we maken lost één concreet probleem op — niet meer, niet minder.</p>",
+            "text_style": "body"
           }
         }
       },
-      "block_order": ["caption", "heading", "text"],
+      "block_order": [
+        "caption",
+        "heading",
+        "text"
+      ],
       "settings": {
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
         "color_scheme": "scheme-1",
-        "content_layout": "no-overlap",
-        "mobile_content_alignment": "left"
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "ugc_grid": {
       "type": "multicolumn",
       "blocks": {
-        "column-1": { "type": "column", "settings": { "title": "", "text": "" } },
-        "column-2": { "type": "column", "settings": { "title": "", "text": "" } },
-        "column-3": { "type": "column", "settings": { "title": "", "text": "" } },
-        "column-4": { "type": "column", "settings": { "title": "", "text": "" } }
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-4": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
       },
-      "block_order": ["column-1", "column-2", "column-3", "column-4"],
+      "block_order": [
+        "column-1",
+        "column-2",
+        "column-3",
+        "column-4"
+      ],
       "settings": {
         "title": "@yerkoo",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
-        "column_alignment": "center",
-        "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": true,
         "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
         "color_scheme": "scheme-1",
         "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -306,11 +423,13 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Vraag over een bestelling of product? <a href=\"mailto:info@yergoods.com\">info@yergoods.com<\/a> — Livechat ma–vr 9:00–17:00</p>"
+            "text": "<p>Vraag over een bestelling of product? <a href=\"mailto:info@yergoods.com\">info@yergoods.com</a> — Livechat ma–vr 9:00–17:00</p>"
           }
         }
       },
-      "block_order": ["text"],
+      "block_order": [
+        "text"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -328,7 +447,8 @@
           "settings": {
             "heading": "Hoe volg ik mijn bestelling?",
             "icon": "none",
-            "row_content": "<p>Je ontvangt na verzending een track & trace-link per e-mail.</p>"
+            "row_content": "<p>Je ontvangt na verzending een track & trace-link per e-mail.</p>",
+            "page": ""
           }
         },
         "row-2": {
@@ -336,7 +456,8 @@
           "settings": {
             "heading": "Welke betaalmethoden accepteren jullie?",
             "icon": "none",
-            "row_content": "<p>iDEAL, creditcard, PayPal en Klarna (achteraf betalen).</p>"
+            "row_content": "<p>iDEAL, creditcard, PayPal en Klarna (achteraf betalen).</p>",
+            "page": ""
           }
         },
         "row-3": {
@@ -344,7 +465,8 @@
           "settings": {
             "heading": "Kan ik een artikel ruilen of retourneren?",
             "icon": "none",
-            "row_content": "<p>Ja, binnen 30 dagen gratis retour binnen Nederland.</p>"
+            "row_content": "<p>Ja, binnen 30 dagen gratis retour binnen Nederland.</p>",
+            "page": ""
           }
         },
         "row-4": {
@@ -352,11 +474,17 @@
           "settings": {
             "heading": "Bieden jullie cadeaubonnen aan?",
             "icon": "none",
-            "row_content": "<p>Nog niet, maar dit staat op de planning voor dit jaar.</p>"
+            "row_content": "<p>Nog niet, maar dit staat op de planning voor dit jaar.</p>",
+            "page": ""
           }
         }
       },
-      "block_order": ["row-1", "row-2", "row-3", "row-4"],
+      "block_order": [
+        "row-1",
+        "row-2",
+        "row-3",
+        "row-4"
+      ],
       "settings": {
         "caption": "",
         "heading": "Veelgestelde vragen",
@@ -366,46 +494,10 @@
         "container_color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
         "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 20
-      }
-    },
-    "faq_contact_cta": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Nog een vraag?",
-            "heading_size": "h2"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Stuur ons een mail, we reageren binnen 24 uur.</p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Neem contact op",
-            "button_link": "mailto:info@yergoods.com",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": ["heading", "text", "button"],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-5",
-        "full_width": false,
-        "padding_top": 36,
-        "padding_bottom": 52
       }
     }
   },
@@ -421,7 +513,6 @@
     "ugc_grid",
     "recently_viewed",
     "contact_strip",
-    "faq",
-    "faq_contact_cta"
+    "faq"
   ]
 }
