@@ -2287,6 +2287,43 @@
         "name": "Meerdere kolommen"
       }
     },
+    "testimonials": {
+      "name": "Testimonials",
+      "settings": {
+        "heading": {
+          "label": "Titel"
+        }
+      },
+      "blocks": {
+        "testimonial": {
+          "name": "Testimonial",
+          "settings": {
+            "rating": {
+              "label": "Beoordeling",
+              "info": "Zet op 0 om de beoordeling te verbergen"
+            },
+            "quote": {
+              "label": "Citaat",
+              "default": "<p>Deel een klantbeoordeling of review.</p>"
+            },
+            "avatar": {
+              "label": "Avatar-afbeelding"
+            },
+            "author": {
+              "label": "Naam",
+              "default": "Naam van auteur"
+            },
+            "author_title": {
+              "label": "Titel",
+              "default": "Titel van auteur"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Testimonials"
+      }
+    },
     "newsletter": {
       "name": "Aanmelding voor het ontvangen van e-mail",
       "settings": {

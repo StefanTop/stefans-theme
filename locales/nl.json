@@ -337,6 +337,9 @@
     "collection_list": {
       "view_all": "Alles bekijken"
     },
+    "testimonials": {
+      "rating": "Beoordeeld met {{ rating }} van de 5 sterren"
+    },
     "collection_template": {
       "title": "Collectie",
       "empty": "Geen producten gevonden",

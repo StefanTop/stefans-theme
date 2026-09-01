@@ -345,6 +345,9 @@
     "collection_list": {
       "view_all": "View all"
     },
+    "testimonials": {
+      "rating": "Rated {{ rating }} out of 5 stars"
+    },
     "collection_template": {
       "empty": "No products found",
       "title": "Collection",

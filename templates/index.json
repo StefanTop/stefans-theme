@@ -1,75 +1,525 @@
 {
   "sections": {
-    "image_banner": {
+    "hero": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "heading": "Welkom in onze winkel",
+            "heading_size": "hxl"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Ontdek onze nieuwste collectie",
+            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "Shop nu",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
         }
       },
-      "block_order": [
-        "heading",
-        "button"
-      ],
+      "block_order": ["heading", "text", "button"],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 20,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
         "image_behavior": "none",
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": true
       }
     },
-    "featured_collection": {
+    "shop_by_category": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-1": { "type": "featured_collection", "settings": { "collection": "" } },
+        "collection-2": { "type": "featured_collection", "settings": { "collection": "" } },
+        "collection-3": { "type": "featured_collection", "settings": { "collection": "" } },
+        "collection-4": { "type": "featured_collection", "settings": { "collection": "" } }
+      },
+      "block_order": ["collection-1", "collection-2", "collection-3", "collection-4"],
+      "settings": {
+        "title": "Shop op categorie",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "swipe_on_mobile": true,
+        "columns_mobile": "2",
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "promo_collections": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-1": { "type": "featured_collection", "settings": { "collection": "" } },
+        "collection-2": { "type": "featured_collection", "settings": { "collection": "" } },
+        "collection-3": { "type": "featured_collection", "settings": { "collection": "" } }
+      },
+      "block_order": ["collection-1", "collection-2", "collection-3"],
+      "settings": {
+        "title": "Ontdek onze collecties",
+        "heading_size": "h1",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "color_scheme": "scheme-2",
+        "swipe_on_mobile": true,
+        "columns_mobile": "1",
+        "show_view_all": false,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "must_have": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
+        "title": "Onze musthaves",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "products_to_show": 3,
+        "columns_desktop": 3,
         "color_scheme": "scheme-1",
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
-        "show_vendor": false,
+        "show_vendor": true,
         "show_rating": false,
         "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
+        "columns_mobile": "1",
+        "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "video",
+      "settings": {
+        "heading": "Bekijk het in actie",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "Ontdek het verhaal achter onze producten",
+        "color_scheme": "scheme-4",
+        "full_width": true
+      }
+    },
+    "weekly_bestsellers": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Weekelijkse bestsellers",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "promo_banner_1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Snelle levering",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Omschrijf hier de belangrijkste voordelen van dit product of deze collectie.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop nu",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "promo_banner_2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Uitstekende kwaliteit",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Omschrijf hier de belangrijkste voordelen van dit product of deze collectie.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop nu",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "promo_banner_3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Gemakkelijk in gebruik",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Omschrijf hier de belangrijkste voordelen van dit product of deze collectie.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop nu",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "content_layout": "no-overlap",
+        "mobile_content_alignment": "left"
+      }
+    },
+    "icon_row": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": { "title": "Eenvoudig retourneren", "text": "<p>Gratis retourneren binnen 30 dagen</p>" }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": { "title": "Gratis verzending", "text": "<p>Gratis verzending vanaf een bepaald bedrag</p>" }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": { "title": "Veilig betalen", "text": "<p>Al je betalingen zijn beveiligd</p>" }
+        },
+        "column-4": {
+          "type": "column",
+          "settings": { "title": "Kwaliteitsgarantie", "text": "<p>Wij staan achter onze producten</p>" }
+        },
+        "column-5": {
+          "type": "column",
+          "settings": { "title": "Goede service", "text": "<p>Onze klantenservice staat voor je klaar</p>" }
+        }
+      },
+      "block_order": ["column-1", "column-2", "column-3", "column-4", "column-5"],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "square",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": true,
+        "columns_desktop": 5,
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "value_banners": {
+      "type": "multirow",
+      "blocks": {
+        "row-1": {
+          "type": "row",
+          "settings": {
+            "heading": "Cinematische ervaring",
+            "text": "<p>Beschrijf hier een productvoordeel of collectie.</p>",
+            "button_label": "Ontdek",
+            "button_link": "shopify://collections/all"
+          }
+        },
+        "row-2": {
+          "type": "row",
+          "settings": {
+            "heading": "Strak design, naadloze integratie",
+            "text": "<p>Beschrijf hier een productvoordeel of collectie.</p>",
+            "button_label": "Shop de stijl",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": ["row-1", "row-2"],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "desktop_content_alignment": "left",
+        "desktop_content_position": "middle",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "feature_links": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Cinematische ervaring thuis",
+            "text": "",
+            "link_label": "Ontdek",
+            "link": "shopify://collections/all"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Strak design, naadloze integratie",
+            "text": "",
+            "link_label": "Shop de stijl",
+            "link": "shopify://collections/all"
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Draadloos gemak",
+            "text": "",
+            "link_label": "Ontdek",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": ["column-1", "column-2", "column-3"],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "<p>Deze producten overtreffen alle verwachtingen qua kwaliteit en gebruiksgemak.</p>",
+            "author": "Naam klant",
+            "author_title": "Tevreden klant"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "<p>Snelle levering en top klantenservice. Ik kom zeker terug.</p>",
+            "author": "Naam klant",
+            "author_title": "Tevreden klant"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "<p>Precies wat ik zocht, geweldige prijs-kwaliteitverhouding.</p>",
+            "author": "Naam klant",
+            "author_title": "Tevreden klant"
+          }
+        }
+      },
+      "block_order": ["testimonial-1", "testimonial-2", "testimonial-3"],
+      "settings": {
+        "heading": "Wat klanten zeggen",
+        "heading_size": "h1",
+        "color_scheme": "scheme-2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "newest_article": {
+      "type": "featured-blog",
+      "settings": {
+        "post_limit": 2,
+        "heading": "Nieuwste artikelen",
+        "heading_size": "h1",
+        "columns_desktop": 2,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan ik het uiterlijk van het product aanpassen aan mijn merk?",
+            "icon": "none",
+            "row_content": "<p>Ja, veel van onze producten zijn aan te passen. Neem contact op met onze klantenservice voor de mogelijkheden.</p>"
+          }
+        },
+        "row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is het thema geschikt voor mobiel?",
+            "icon": "none",
+            "row_content": "<p>Ja, de winkel is volledig geoptimaliseerd voor gebruik op mobiele apparaten.</p>"
+          }
+        },
+        "row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hoe werk ik product- of afbeeldingsinformatie bij?",
+            "icon": "none",
+            "row_content": "<p>Dit kan eenvoudig via het Shopify-adminpaneel onder Producten.</p>"
+          }
+        },
+        "row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ondersteunt het thema social media-integratie?",
+            "icon": "none",
+            "row_content": "<p>Ja, je kunt je social media-kanalen koppelen via de thema-instellingen.</p>"
+          }
+        },
+        "row-5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Zijn er specifieke functies om producten uit te lichten?",
+            "icon": "none",
+            "row_content": "<p>Ja, gebruik secties zoals Featured Collection en Collage om producten uit te lichten.</p>"
+          }
+        }
+      },
+      "block_order": ["row-1", "row-2", "row-3", "row-4", "row-5"],
+      "settings": {
+        "caption": "",
+        "heading": "Veelgestelde vragen",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
+        "padding_top": 36,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "hero",
+    "shop_by_category",
+    "promo_collections",
+    "must_have",
+    "video",
+    "weekly_bestsellers",
+    "promo_banner_1",
+    "promo_banner_2",
+    "promo_banner_3",
+    "icon_row",
+    "value_banners",
+    "feature_links",
+    "testimonials",
+    "newest_article",
+    "faq"
   ]
 }
