@@ -538,6 +538,35 @@
         "name": "Apps"
       }
     },
+    "before-after": {
+      "name": "Before & after",
+      "settings": {
+        "heading": {
+          "label": "Heading",
+          "default": "Before & after"
+        },
+        "subheading": {
+          "label": "Subheading"
+        },
+        "image_before": {
+          "label": "Before image"
+        },
+        "label_before": {
+          "label": "Before label",
+          "default": "Before"
+        },
+        "image_after": {
+          "label": "After image"
+        },
+        "label_after": {
+          "label": "After label",
+          "default": "After"
+        }
+      },
+      "presets": {
+        "name": "Before & after"
+      }
+    },
     "collage": {
       "name": "Collage",
       "settings": {
@@ -2869,6 +2898,21 @@
       },
       "presets": {
         "name": "Product reviews"
+      }
+    },
+    "recently-viewed": {
+      "name": "Recently viewed products",
+      "settings": {
+        "heading": {
+          "label": "Heading",
+          "default": "Recently viewed"
+        },
+        "products_to_show": {
+          "label": "Number of products to show"
+        }
+      },
+      "presets": {
+        "name": "Recently viewed products"
       }
     },
     "related-products": {

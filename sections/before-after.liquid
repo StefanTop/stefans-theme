@@ -1,0 +1,162 @@
+{{ 'section-before-after.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="before-after page-width isolate section-{{ section.id }}-padding">
+    {%- unless section.settings.heading == blank -%}
+      <div class="title-wrapper-with-link title-wrapper--no-top-margin">
+        <h2 class="before-after__heading inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+        {%- unless section.settings.subheading == blank -%}
+          <p class="before-after__subheading">{{ section.settings.subheading }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    <div class="before-after__grid">
+      <div class="before-after__media">
+        {%- if section.settings.image_before != blank -%}
+          <img
+            src="{{ section.settings.image_before | image_url: width: 1000 }}"
+            alt="{{ section.settings.image_before.alt | default: section.settings.label_before | escape }}"
+            width="{{ section.settings.image_before.width }}"
+            height="{{ section.settings.image_before.height }}"
+            loading="lazy"
+          >
+        {%- else -%}
+          {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+        <span class="before-after__label">{{ section.settings.label_before }}</span>
+      </div>
+      <div class="before-after__media">
+        {%- if section.settings.image_after != blank -%}
+          <img
+            src="{{ section.settings.image_after | image_url: width: 1000 }}"
+            alt="{{ section.settings.image_after.alt | default: section.settings.label_after | escape }}"
+            width="{{ section.settings.image_after.width }}"
+            height="{{ section.settings.image_after.height }}"
+            loading="lazy"
+          >
+        {%- else -%}
+          {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+        <span class="before-after__label">{{ section.settings.label_after }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.before-after.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "t:sections.before-after.settings.heading.default",
+      "label": "t:sections.before-after.settings.heading.label"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.before-after.settings.subheading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_before",
+      "label": "t:sections.before-after.settings.image_before.label"
+    },
+    {
+      "type": "text",
+      "id": "label_before",
+      "default": "t:sections.before-after.settings.label_before.default",
+      "label": "t:sections.before-after.settings.label_before.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_after",
+      "label": "t:sections.before-after.settings.image_after.label"
+    },
+    {
+      "type": "text",
+      "id": "label_after",
+      "default": "t:sections.before-after.settings.label_after.default",
+      "label": "t:sections.before-after.settings.label_after.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.before-after.presets.name"
+    }
+  ]
+}
+{% endschema %}
