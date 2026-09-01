@@ -177,65 +177,6 @@
         "padding_bottom": 36
       }
     },
-    "promo_banner": {
-      "type": "rich-text",
-      "blocks": {
-        "caption": {
-          "type": "caption",
-          "settings": {
-            "caption": "Beperkte voorraad",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "small"
-          }
-        },
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Tot 20% korting op de najaarscollectie",
-            "heading_size": "h1"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop de aanbieding",
-            "button_link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "caption",
-        "heading",
-        "button"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "full_width": false,
-        "padding_top": 52,
-        "padding_bottom": 52
-      }
-    },
-    "before_after": {
-      "type": "before-after",
-      "settings": {
-        "heading": "Voor & na",
-        "subheading": "Het verschil zie je. Je merkt het wel.",
-        "heading_size": "h1",
-        "image_before": "shopify://shop_images/wax-special.jpg",
-        "label_before": "Voor",
-        "image_after": "shopify://shop_images/wax-special.jpg",
-        "label_after": "Na",
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "trust_badges": {
       "type": "multicolumn",
       "blocks": {
@@ -419,28 +360,6 @@
         "padding_bottom": 36
       }
     },
-    "contact_strip": {
-      "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Vraag over een bestelling of product? <a href=\"mailto:info@yergoods.com\">info@yergoods.com</a> — Livechat ma–vr 9:00–17:00</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": false,
-        "padding_top": 36,
-        "padding_bottom": 20
-      }
-    },
     "faq": {
       "type": "collapsible-content",
       "blocks": {
@@ -491,12 +410,13 @@
         "caption": "",
         "heading": "Veelgestelde vragen",
         "heading_size": "h1",
-        "heading_alignment": "left",
+        "heading_alignment": "center",
         "layout": "none",
         "container_color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
         "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
+        "image": "shopify://shop_images/Main.jpg",
+        "image_ratio": "small",
         "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 20
@@ -508,13 +428,10 @@
     "hero",
     "shop_by_category",
     "bestsellers",
-    "promo_banner",
-    "before_after",
     "trust_badges",
     "founder_story",
     "ugc_grid",
     "recently_viewed",
-    "contact_strip",
     "faq"
   ]
 }
