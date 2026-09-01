@@ -75,6 +75,9 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <product-component view-event-payload="{{ product | standard_event_data: 'view', context: 'page' | escape }}">
     <div class="page-width">
+      {%- if section.settings.show_breadcrumb -%}
+        {%- render 'product-breadcrumb' -%}
+      {%- endif -%}
       <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
         <div class="grid__item product__media-wrapper">
           {% render 'product-media-gallery', variant_images: variant_images %}
@@ -90,6 +93,12 @@
               {%- case block.type -%}
                 {%- when '@app' -%}
                   {% render block %}
+                {%- when 'badge' -%}
+                  {%- if block.settings.text != blank -%}
+                    <span class="badge product__custom-badge color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
+                      {{- block.settings.text | escape -}}
+                    </span>
+                  {%- endif -%}
                 {%- when 'text' -%}
                   <p
                     class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -761,6 +770,25 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "badge",
+      "name": "t:sections.main-product.blocks.badge.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "t:sections.main-product.blocks.badge.settings.text.default",
+          "label": "t:sections.main-product.blocks.badge.settings.text.label"
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "default": "scheme-5",
+          "label": "t:sections.all.colors.label"
+        }
+      ]
     },
     {
       "type": "text",
@@ -2147,6 +2175,12 @@
     }
   ],
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumb",
+      "default": false,
+      "label": "t:sections.main-product.settings.show_breadcrumb.label"
+    },
     {
       "type": "checkbox",
       "id": "enable_sticky_info",

@@ -3,12 +3,15 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
+        "badge": {
+          "type": "badge",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
+            "text": "Bestseller",
+            "color_scheme": "scheme-5"
           }
+        },
+        "rating": {
+          "type": "rating"
         },
         "title": {
           "type": "title"
@@ -16,11 +19,14 @@
         "price": {
           "type": "price"
         },
+        "description": {
+          "type": "description"
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
+            "picker_type": "dropdown",
+            "swatch_shape": "none"
           }
         },
         "quantity_selector": {
@@ -33,31 +39,63 @@
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description"
-        },
-        "share": {
-          "type": "share",
+        "icon_with_text": {
+          "type": "icon-with-text",
           "settings": {
-            "share_label": "Share"
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "heading_1": "Gratis verzending",
+            "icon_2": "return",
+            "heading_2": "30 dagen retour",
+            "icon_3": "lock",
+            "heading_3": "2 jaar garantie"
+          }
+        },
+        "faq_1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wat zit er in de doos?",
+            "icon": "none",
+            "content": "<p>Handstuk, twee opzetstukken, blaasfunctie-mondstuk en reiscase.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Hoelang gaat de batterij mee?",
+            "icon": "none",
+            "content": "<p>Tot 30 minuten continu gebruik op een volle lading.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wat is het retourbeleid?",
+            "icon": "none",
+            "content": "<p>30 dagen bedenktijd, gratis retour binnen Nederland.</p>"
           }
         }
       },
       "block_order": [
-        "vendor",
+        "badge",
+        "rating",
         "title",
         "price",
+        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "icon_with_text",
+        "faq_1",
+        "faq_2",
+        "faq_3"
       ],
       "settings": {
+        "show_breadcrumb": true,
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
         "media_position": "left",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -69,35 +107,65 @@
         "padding_bottom": 12
       }
     },
-    "disclosures": {
-      "type": "disclosures",
+    "product-reviews": {
+      "type": "product-reviews",
+      "blocks": {
+        "review-1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Zuigt echt alles op, ook kruimels tussen de stoelen.",
+            "author": "Mark J."
+          }
+        },
+        "review-2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "quote": "Compact genoeg om altijd in de auto te laten liggen.",
+            "author": "Lisa V."
+          }
+        },
+        "review-3": {
+          "type": "review",
+          "settings": {
+            "rating": 4,
+            "quote": "Batterij gaat net iets korter mee dan ik had verwacht.",
+            "author": "Tom B."
+          }
+        }
+      },
+      "block_order": ["review-1", "review-2", "review-3"],
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 0
+        "heading": "Reviews",
+        "heading_size": "h1",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 36
       }
     },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "heading": "Ook interessant",
+        "heading_size": "h1",
+        "products_to_show": 3,
+        "columns_desktop": 3,
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 28
+        "columns_mobile": "1",
+        "padding_top": 0,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
-    "disclosures",
+    "product-reviews",
     "related-products"
   ]
 }
