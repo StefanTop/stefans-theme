@@ -296,7 +296,7 @@
         "heading": "Veelgestelde vragen",
         "heading_size": "h1",
         "heading_alignment": "center",
-        "layout": "none",
+        "layout": "row",
         "container_color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
         "open_first_collapsible_row": false,
