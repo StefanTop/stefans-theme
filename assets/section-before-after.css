@@ -1,0 +1,48 @@
+.before-after__heading {
+  margin: 0 0 0.8rem;
+}
+
+.before-after__subheading {
+  max-width: 52rem;
+  margin: 0 0 3rem;
+  opacity: 0.75;
+}
+
+.before-after__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+  border-radius: var(--product-card-corner-radius, 0);
+  overflow: hidden;
+}
+
+.before-after__media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.before-after__media img,
+.before-after__media .placeholder-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.before-after__label {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background: rgba(var(--color-background), 0.85);
+  color: rgb(var(--color-foreground));
+}
+
+.before-after__media:last-child .before-after__label {
+  left: auto;
+  right: 2rem;
+}

@@ -1,0 +1,41 @@
+.recently-viewed__heading {
+  margin: 0 0 3rem;
+}
+
+.recently-viewed__grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recently-viewed__card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.recently-viewed__media {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--product-card-corner-radius, 0);
+  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+  margin-bottom: 1.2rem;
+}
+
+.recently-viewed__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.recently-viewed__title {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.recently-viewed__price {
+  display: block;
+  opacity: 0.75;
+}

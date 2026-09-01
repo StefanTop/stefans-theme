@@ -527,6 +527,35 @@
         "name": "Aankondigingsbalk"
       }
     },
+    "before-after": {
+      "name": "Voor & na",
+      "settings": {
+        "heading": {
+          "label": "Titel",
+          "default": "Voor & na"
+        },
+        "subheading": {
+          "label": "Subtitel"
+        },
+        "image_before": {
+          "label": "Voor-afbeelding"
+        },
+        "label_before": {
+          "label": "Label voor",
+          "default": "Voor"
+        },
+        "image_after": {
+          "label": "Na-afbeelding"
+        },
+        "label_after": {
+          "label": "Label na",
+          "default": "Na"
+        }
+      },
+      "presets": {
+        "name": "Voor & na"
+      }
+    },
     "collage": {
       "name": "Collage",
       "settings": {
@@ -3261,6 +3290,21 @@
       },
       "presets": {
         "name": "Productreviews"
+      }
+    },
+    "recently-viewed": {
+      "name": "Onlangs bekeken producten",
+      "settings": {
+        "heading": {
+          "label": "Titel",
+          "default": "Onlangs bekeken"
+        },
+        "products_to_show": {
+          "label": "Aantal producten"
+        }
+      },
+      "presets": {
+        "name": "Onlangs bekeken producten"
       }
     },
     "related-products": {
