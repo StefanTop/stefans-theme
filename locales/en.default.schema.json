@@ -2591,6 +2591,43 @@
         "name": "Multicolumn"
       }
     },
+    "testimonials": {
+      "name": "Testimonials",
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        }
+      },
+      "blocks": {
+        "testimonial": {
+          "name": "Testimonial",
+          "settings": {
+            "rating": {
+              "label": "Rating",
+              "info": "Set to 0 to hide the rating"
+            },
+            "quote": {
+              "label": "Quote",
+              "default": "<p>Share a customer testimonial or review.</p>"
+            },
+            "avatar": {
+              "label": "Avatar image"
+            },
+            "author": {
+              "label": "Name",
+              "default": "Author's name"
+            },
+            "author_title": {
+              "label": "Title",
+              "default": "Author's title"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Testimonials"
+      }
+    },
     "newsletter": {
       "name": "Email signup",
       "settings": {

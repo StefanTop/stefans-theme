@@ -1,0 +1,242 @@
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="testimonials page-width isolate section-{{ section.id }}-padding">
+    {%- unless section.settings.heading == blank -%}
+      <div class="title-wrapper-with-link title-wrapper--no-top-margin center">
+        <h2 class="testimonials__heading inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+      </div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <slider-component class="slider-mobile-gutter">
+        <ul
+          class="testimonials__list grid grid--1-col slider slider--everywhere grid--peek"
+          id="Slider-{{ section.id }}"
+          role="list"
+        >
+          {%- for block in section.blocks -%}
+            <li
+              id="Slide-{{ section.id }}-{{ forloop.index }}"
+              class="testimonials__item grid__item slider__slide"
+              {{ block.shopify_attributes }}
+            >
+              <div class="testimonials__card">
+                {%- if block.settings.rating > 0 -%}
+                  <div class="testimonials__rating" role="img" aria-label="{{ 'sections.testimonials.rating' | t: rating: block.settings.rating }}">
+                    {%- for i in (1..5) -%}
+                      <span class="svg-wrapper{% if i > block.settings.rating %} testimonials__star--empty{% endif %}">
+                        {{- 'icon-star.svg' | inline_asset_content -}}
+                      </span>
+                    {%- endfor -%}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.quote != blank -%}
+                  <blockquote class="testimonials__quote">
+                    {{ block.settings.quote }}
+                  </blockquote>
+                {%- endif -%}
+
+                <div class="testimonials__author">
+                  {%- if block.settings.avatar != blank -%}
+                    <img
+                      class="testimonials__avatar"
+                      src="{{ block.settings.avatar | image_url: width: 96 }}"
+                      alt="{{ block.settings.avatar.alt | default: block.settings.author | escape }}"
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                    >
+                  {%- endif -%}
+                  <div class="testimonials__author-info">
+                    {%- if block.settings.author != blank -%}
+                      <p class="testimonials__author-name">{{ block.settings.author }}</p>
+                    {%- endif -%}
+                    {%- if block.settings.author_title != blank -%}
+                      <p class="testimonials__author-title caption">{{ block.settings.author_title }}</p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </li>
+          {%- endfor -%}
+        </ul>
+
+        {%- if section.blocks.size > 1 -%}
+          <div class="slider-buttons">
+            <button
+              type="button"
+              class="slider-button slider-button--prev"
+              name="previous"
+              aria-label="{{ 'general.slider.previous_slide' | t }}"
+            >
+              <span class="svg-wrapper">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
+            </button>
+            <div class="slider-counter caption">
+              <span class="slider-counter--current">1</span>
+              <span aria-hidden="true"> / </span>
+              <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+              <span class="slider-counter--total">{{ section.blocks.size }}</span>
+            </div>
+            <button
+              type="button"
+              class="slider-button slider-button--next"
+              name="next"
+              aria-label="{{ 'general.slider.next_slide' | t }}"
+            >
+              <span class="svg-wrapper">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
+            </button>
+          </div>
+        {%- endif -%}
+      </slider-component>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.testimonials.name",
+  "tag": "section",
+  "class": "section",
+  "max_blocks": 12,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.testimonials.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-2"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "t:sections.testimonials.blocks.testimonial.name",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "default": 5,
+          "label": "t:sections.testimonials.blocks.testimonial.settings.rating.label",
+          "info": "t:sections.testimonials.blocks.testimonial.settings.rating.info"
+        },
+        {
+          "type": "richtext",
+          "id": "quote",
+          "default": "t:sections.testimonials.blocks.testimonial.settings.quote.default",
+          "label": "t:sections.testimonials.blocks.testimonial.settings.quote.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "t:sections.testimonials.blocks.testimonial.settings.avatar.label"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "default": "t:sections.testimonials.blocks.testimonial.settings.author.default",
+          "label": "t:sections.testimonials.blocks.testimonial.settings.author.label"
+        },
+        {
+          "type": "text",
+          "id": "author_title",
+          "default": "t:sections.testimonials.blocks.testimonial.settings.author_title.default",
+          "label": "t:sections.testimonials.blocks.testimonial.settings.author_title.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.testimonials.presets.name",
+      "blocks": [
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
