@@ -1631,6 +1631,15 @@
     "main-product": {
       "name": "Productinformatie",
       "blocks": {
+        "badge": {
+          "name": "Badge",
+          "settings": {
+            "text": {
+              "label": "Tekst",
+              "default": "Bestseller"
+            }
+          }
+        },
         "text": {
           "name": "Tekst",
           "settings": {
@@ -2035,6 +2044,9 @@
         },
         "enable_video_looping": {
           "label": "Video continu herhalen"
+        },
+        "show_breadcrumb": {
+          "label": "Toon kruimelpad"
         },
         "enable_sticky_info": {
           "label": "Sticky content"
@@ -3219,6 +3231,36 @@
       },
       "presets": {
         "name": "Inklapbare content"
+      }
+    },
+    "product-reviews": {
+      "name": "Productreviews",
+      "settings": {
+        "heading": {
+          "label": "Titel",
+          "default": "Reviews"
+        }
+      },
+      "blocks": {
+        "review": {
+          "name": "Review",
+          "settings": {
+            "rating": {
+              "label": "Beoordeling"
+            },
+            "quote": {
+              "label": "Citaat",
+              "default": "Deel een klantreview."
+            },
+            "author": {
+              "label": "Naam",
+              "default": "Naam van klant"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Productreviews"
       }
     },
     "related-products": {

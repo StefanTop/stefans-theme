@@ -1935,6 +1935,15 @@
     "main-product": {
       "name": "Product information",
       "blocks": {
+        "badge": {
+          "name": "Badge",
+          "settings": {
+            "text": {
+              "label": "Text",
+              "default": "Bestseller"
+            }
+          }
+        },
         "text": {
           "name": "Text",
           "settings": {
@@ -2336,6 +2345,9 @@
       "settings": {
         "header": {
           "content": "Media"
+        },
+        "show_breadcrumb": {
+          "label": "Show breadcrumb"
         },
         "enable_sticky_info": {
           "label": "Sticky content"
@@ -2827,6 +2839,36 @@
       },
       "presets": {
         "name": "Quick order list"
+      }
+    },
+    "product-reviews": {
+      "name": "Product reviews",
+      "settings": {
+        "heading": {
+          "label": "Heading",
+          "default": "Reviews"
+        }
+      },
+      "blocks": {
+        "review": {
+          "name": "Review",
+          "settings": {
+            "rating": {
+              "label": "Rating"
+            },
+            "quote": {
+              "label": "Quote",
+              "default": "Share a customer review."
+            },
+            "author": {
+              "label": "Name",
+              "default": "Customer name"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Product reviews"
       }
     },
     "related-products": {

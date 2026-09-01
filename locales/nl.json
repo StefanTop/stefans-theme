@@ -9,6 +9,11 @@
  */
 {
   "general": {
+    "breadcrumb": {
+      "label": "Kruimelpad",
+      "home": "Home",
+      "all_products": "Alle producten"
+    },
     "password_page": {
       "login_form_heading": "Ga winkel binnen met wachtwoord:",
       "login_password_button": "Ga naar binnen met wachtwoord",

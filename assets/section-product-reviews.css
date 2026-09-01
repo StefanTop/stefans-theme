@@ -1,0 +1,40 @@
+.product-reviews__heading {
+  margin: 0 0 3rem;
+}
+
+.product-reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-reviews__card {
+  height: 100%;
+  padding: 2.4rem;
+  border-radius: var(--card-corner-radius, 0.6rem);
+  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+}
+
+.product-reviews__rating {
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.product-reviews__rating .icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.product-reviews__star--empty {
+  opacity: 0.3;
+}
+
+.product-reviews__quote {
+  margin: 0 0 1.2rem;
+}
+
+.product-reviews__author {
+  margin: 0;
+  opacity: 0.7;
+}
