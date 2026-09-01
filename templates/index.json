@@ -44,11 +44,11 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
         "image_behavior": "none",
-        "desktop_content_position": "middle-left",
-        "desktop_content_alignment": "left",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
         "show_text_box": false,
         "color_scheme": "scheme-1",
         "stack_images_on_mobile": false,
