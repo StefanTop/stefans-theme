@@ -74,7 +74,7 @@
       },
       "block_order": ["heading", "text", "button"],
       "settings": {
-        "image_overlay_opacity": 45,
+        "image_overlay_opacity": 40,
         "image_height": "large",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
@@ -167,7 +167,7 @@
       },
       "block_order": ["caption", "heading", "button"],
       "settings": {
-        "desktop_content_position": "middle",
+        "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-3",
         "full_width": false,
@@ -312,7 +312,7 @@
       },
       "block_order": ["text"],
       "settings": {
-        "desktop_content_position": "middle",
+        "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-1",
         "full_width": false,
@@ -400,7 +400,7 @@
       },
       "block_order": ["heading", "text", "button"],
       "settings": {
-        "desktop_content_position": "middle",
+        "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "scheme-5",
         "full_width": false,
