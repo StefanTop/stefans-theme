@@ -556,6 +556,74 @@
         "name": "Voor & na"
       }
     },
+    "deal-tiles": {
+      "name": "Actietegels",
+      "blocks": {
+        "tile": {
+          "name": "Tegel",
+          "settings": {
+            "tag": {
+              "label": "Label",
+              "default": "Aanbieding"
+            },
+            "title": {
+              "label": "Titel",
+              "default": "Tegeltitel"
+            },
+            "link": {
+              "label": "Link"
+            },
+            "background_color": {
+              "label": "Achtergrondkleur"
+            },
+            "tag_color": {
+              "label": "Kleur label"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Actietegels"
+      }
+    },
+    "feature-rows": {
+      "name": "Kenmerkenrijen",
+      "blocks": {
+        "row": {
+          "name": "Rij",
+          "settings": {
+            "image": {
+              "label": "Afbeelding"
+            },
+            "image_position": {
+              "label": "Positie afbeelding",
+              "options__1": {
+                "label": "Links"
+              },
+              "options__2": {
+                "label": "Rechts"
+              }
+            },
+            "title": {
+              "label": "Titel",
+              "default": "Titel van kenmerk,"
+            },
+            "title_accent": {
+              "label": "Titel-accent (cursief)",
+              "default": "cursief",
+              "info": "Wordt cursief en gedempt getoond, na de titel"
+            },
+            "text": {
+              "label": "Tekst",
+              "default": "<p>Beschrijf dit kenmerk.</p>"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Kenmerkenrijen"
+      }
+    },
     "collage": {
       "name": "Collage",
       "settings": {
@@ -1751,6 +1819,15 @@
             "text": {
               "label": "Tekst",
               "default": "Delen"
+            }
+          }
+        },
+        "payment_icons": {
+          "name": "Betaalmethode-iconen",
+          "settings": {
+            "label": {
+              "label": "Label",
+              "default": "Betalen met"
             }
           }
         },

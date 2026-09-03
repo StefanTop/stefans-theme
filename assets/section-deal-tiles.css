@@ -1,0 +1,47 @@
+.deal-tiles__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+}
+
+@media screen and (max-width: 749px) {
+  .deal-tiles__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.deal-tiles__tile {
+  display: block;
+  padding: 2.4rem;
+  border-radius: var(--product-card-corner-radius, 0);
+  text-decoration: none;
+  min-height: 12rem;
+  position: relative;
+}
+
+.deal-tiles__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.deal-tiles__tag .svg-wrapper {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.deal-tiles__tag svg {
+  width: 100%;
+  height: 100%;
+}
+
+.deal-tiles__title {
+  display: block;
+  font-family: var(--font-heading-family);
+  font-size: 1.6rem;
+  color: rgb(var(--color-foreground));
+  margin-top: 1rem;
+}

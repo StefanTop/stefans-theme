@@ -38,8 +38,8 @@
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  background: rgba(var(--color-background), 0.85);
-  color: rgb(var(--color-foreground));
+  background: rgba(20, 22, 26, 0.55);
+  color: #ffffff;
 }
 
 .before-after__media:last-child .before-after__label {

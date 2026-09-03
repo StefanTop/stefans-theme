@@ -485,6 +485,20 @@
                     render 'share-button', block: block, share_link: share_url
                   %}
 
+                {%- when 'payment_icons' -%}
+                  {%- if shop.enabled_payment_types.size > 0 -%}
+                    <div class="product__payment-icons" {{ block.shopify_attributes }}>
+                      {%- if block.settings.label != blank -%}
+                        <span class="product__payment-icons-label">{{ block.settings.label }}</span>
+                      {%- endif -%}
+                      <ul class="list-unstyled product__payment-icons-list" role="list">
+                        {%- for type in shop.enabled_payment_types -%}
+                          <li>{{ type | payment_type_svg_tag: class: 'icon icon-payment-type' }}</li>
+                        {%- endfor -%}
+                      </ul>
+                    </div>
+                  {%- endif -%}
+
                 {%- when 'disclosures' -%}
                   {%- render 'product-disclosures',
                     product: product,
@@ -986,6 +1000,19 @@
           "id": "share_label",
           "label": "t:sections.main-product.blocks.share.settings.text.label",
           "default": "t:sections.main-product.blocks.share.settings.text.default"
+        }
+      ]
+    },
+    {
+      "type": "payment_icons",
+      "name": "t:sections.main-product.blocks.payment_icons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "default": "t:sections.main-product.blocks.payment_icons.settings.label.default",
+          "label": "t:sections.main-product.blocks.payment_icons.settings.label.label"
         }
       ]
     },

@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -19,21 +10,14 @@
             "color_scheme": "scheme-5"
           }
         },
-        "rating": {
-          "type": "rating",
-          "settings": {}
-        },
         "title": {
-          "type": "title",
-          "settings": {}
+          "type": "title"
         },
         "price": {
-          "type": "price",
-          "settings": {}
+          "type": "price"
         },
         "description": {
-          "type": "description",
-          "settings": {}
+          "type": "description"
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -43,8 +27,7 @@
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
+          "type": "quantity_selector"
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -65,13 +48,18 @@
             "heading_3": "2 jaar garantie"
           }
         },
+        "payment_icons": {
+          "type": "payment_icons",
+          "settings": {
+            "label": "Betalen met"
+          }
+        },
         "faq_1": {
           "type": "collapsible_tab",
           "settings": {
             "heading": "Wat zit er in de doos?",
             "icon": "none",
-            "content": "<p>Handstuk, twee opzetstukken, blaasfunctie-mondstuk en reiscase.</p>",
-            "page": ""
+            "content": "<p>Handstuk, twee opzetstukken, blaasfunctie-mondstuk en reiscase.</p>"
           }
         },
         "faq_2": {
@@ -79,8 +67,7 @@
           "settings": {
             "heading": "Hoelang gaat de batterij mee?",
             "icon": "none",
-            "content": "<p>Tot 30 minuten continu gebruik op een volle lading.</p>",
-            "page": ""
+            "content": "<p>Tot 30 minuten continu gebruik op een volle lading.</p>"
           }
         },
         "faq_3": {
@@ -88,14 +75,12 @@
           "settings": {
             "heading": "Wat is het retourbeleid?",
             "icon": "none",
-            "content": "<p>30 dagen bedenktijd, gratis retour binnen Nederland.</p>",
-            "page": ""
+            "content": "<p>30 dagen bedenktijd, gratis retour binnen Nederland.</p>"
           }
         }
       },
       "block_order": [
         "badge",
-        "rating",
         "title",
         "price",
         "description",
@@ -103,6 +88,7 @@
         "quantity_selector",
         "buy_buttons",
         "icon_with_text",
+        "payment_icons",
         "faq_1",
         "faq_2",
         "faq_3"
@@ -111,41 +97,118 @@
         "show_breadcrumb": true,
         "enable_sticky_info": true,
         "color_scheme": "scheme-1",
+        "media_position": "left",
+        "gallery_layout": "thumbnail",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "thumbnail",
-        "mobile_thumbnails": "hide",
-        "media_position": "left",
         "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
       }
     },
+    "feature_rows": {
+      "type": "feature-rows",
+      "blocks": {
+        "row-1": {
+          "type": "row",
+          "settings": {
+            "image_position": "left",
+            "title": "Twee functies,",
+            "title_accent": "één apparaat",
+            "text": "<p>Zuig kruimels en stof op, of schakel om naar de blaasfunctie voor stof tussen de bekleding en in kieren die je anders niet bereikt. Geen los apparaat nodig — één handstuk doet het allemaal.</p>"
+          }
+        },
+        "row-2": {
+          "type": "row",
+          "settings": {
+            "image_position": "right",
+            "title": "Overal mee naartoe,",
+            "title_accent": "nooit in de weg",
+            "text": "<p>De meegeleverde reiscase houdt het handstuk en de opzetstukken bij elkaar, klaar om in het dashboardkastje te leggen. Zo grijp je hem zonder te zoeken, elke keer dat je hem nodig hebt.</p>"
+          }
+        },
+        "row-3": {
+          "type": "row",
+          "settings": {
+            "image_position": "left",
+            "title": "Dertig minuten,",
+            "title_accent": "elke rit",
+            "text": "<p>Een volle lading is genoeg voor een grondige beurt van de hele auto. De oplaadkabel zit in de doos, dus hij is klaar voor gebruik zodra hij aankomt.</p>"
+          }
+        }
+      },
+      "block_order": ["row-1", "row-2", "row-3"],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "guarantee_banner": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Toch niet overtuigd?<br><em>Geen probleem.</em>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Je hoeft ons niet op ons woord te geloven. Gebruik de autostofzuiger 30 dagen in je eigen auto. Past het toch niet bij je, stuur het gratis retour en je krijgt het volledige bedrag terug.</p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Toevoegen aan winkelwagen",
+            "button_link": "#",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-6",
+        "full_width": false,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
     "related-products": {
       "type": "related-products",
-      "disabled": true,
       "settings": {
         "heading": "Ook interessant",
         "heading_size": "h1",
         "products_to_show": 3,
         "columns_desktop": 3,
-        "columns_mobile": "1",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "padding_top": 0,
+        "columns_mobile": "1",
+        "padding_top": 36,
         "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
+    "feature_rows",
+    "guarantee_banner",
     "related-products"
   ]
 }

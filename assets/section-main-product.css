@@ -1521,3 +1521,24 @@ a.product__text {
 .product__breadcrumb span[aria-current] {
   color: rgb(var(--color-foreground));
 }
+
+.product__payment-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  color: rgba(var(--color-foreground), 0.62);
+}
+
+.product__payment-icons-list {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.product__payment-icons-list .icon-payment-type {
+  height: 2.4rem;
+  width: auto;
+}

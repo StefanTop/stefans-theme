@@ -567,6 +567,74 @@
         "name": "Before & after"
       }
     },
+    "deal-tiles": {
+      "name": "Deal tiles",
+      "blocks": {
+        "tile": {
+          "name": "Tile",
+          "settings": {
+            "tag": {
+              "label": "Tag",
+              "default": "Offer"
+            },
+            "title": {
+              "label": "Title",
+              "default": "Tile title"
+            },
+            "link": {
+              "label": "Link"
+            },
+            "background_color": {
+              "label": "Background color"
+            },
+            "tag_color": {
+              "label": "Tag color"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Deal tiles"
+      }
+    },
+    "feature-rows": {
+      "name": "Feature rows",
+      "blocks": {
+        "row": {
+          "name": "Row",
+          "settings": {
+            "image": {
+              "label": "Image"
+            },
+            "image_position": {
+              "label": "Image position",
+              "options__1": {
+                "label": "Left"
+              },
+              "options__2": {
+                "label": "Right"
+              }
+            },
+            "title": {
+              "label": "Title",
+              "default": "Feature title,"
+            },
+            "title_accent": {
+              "label": "Title accent (italic)",
+              "default": "in italic",
+              "info": "Shown in italic, muted color, after the title"
+            },
+            "text": {
+              "label": "Text",
+              "default": "<p>Describe this feature.</p>"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Feature rows"
+      }
+    },
     "collage": {
       "name": "Collage",
       "settings": {
@@ -2095,6 +2163,15 @@
             "text": {
               "label": "Text",
               "default": "Share"
+            }
+          }
+        },
+        "payment_icons": {
+          "name": "Payment icons",
+          "settings": {
+            "label": {
+              "label": "Label",
+              "default": "Pay with"
             }
           }
         },
