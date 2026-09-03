@@ -53,6 +53,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "payment_icons_qNzWtM": {
+          "type": "payment_icons",
+          "settings": {
+            "label": "Pay with"
+          }
+        },
         "icon_with_text": {
           "type": "icon-with-text",
           "settings": {
@@ -102,6 +108,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "payment_icons_qNzWtM",
         "icon_with_text",
         "faq_1",
         "faq_2",
